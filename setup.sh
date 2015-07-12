@@ -105,6 +105,7 @@ git clone https://github.com/mitechie/pyflakes-pathogen.git
 git clone https://github.com/scrooloose/syntastic.git
 echo "Syntastic will rely on code validation tools, such as jshint"
 git clone https://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/twerth/ir_black.git
 git clone https://github.com/Lokaltog/vim-easymotion.git
 git clone https://github.com/nvie/vim-flake8.git
 git clone https://github.com/mhinz/vim-signify.git
