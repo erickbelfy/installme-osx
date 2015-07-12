@@ -95,7 +95,6 @@ cd ~/.vim/bundle/
 git clone https://github.com/vim-scripts/bufkill.vim
 git clone https://github.com/wincent/Command-T.git
 git clone https://github.com/tpope/vim-fugitive.git
-git clone https://github.com/twolfson/sexy-bash-prompt.git
 echo "Command-T will need extra setup, please review its docs"
 open https://github.com/wincent/Command-T/blob/master/doc/command-t.txt#L174
 git clone https://github.com/rking/ag.vim
@@ -132,9 +131,11 @@ make
 cd ~/Documents/repos/
 git clone https://github.com/ruyadorno/dotfiles.git
 
-
-## Get zsh bundle manager
-git clone https://github.com/tarjoilija/zgen.git
+## Get sexy bash prompt
+cd ~/Documents/repos/
+git clone https://github.com/twolfson/sexy-bash-prompt.git
+cd ~/Documents/repos/sexy-bash-prompt/
+make install
 
 
 ## Setup symlinks
@@ -144,12 +145,10 @@ ln -s Documents/repos/dotfiles/gitconfig .gitconfig
 ln -s Documents/repos/dotfiles/gitignore_global .gitignore_global
 ln -s Documents/repos/dotfiles/hgrc .hgrc
 ln -s Documents/repos/dotfiles/vimrc .vimrc
-ln -s Documents/repos/dotfiles/zshrc .zshrc
 
 
-# Set zsh as default shell
-chsh -s /bin/zsh
-
+# Set bash as default shell
+chsh -s /bin/bash
 
 ## Casks that needs password permission
 installcask private-internet-access
